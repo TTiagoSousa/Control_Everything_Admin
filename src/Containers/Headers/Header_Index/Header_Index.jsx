@@ -1,6 +1,7 @@
 import React from 'react';
 import './Header_Index.scss';
 import Language_Selector from '../../../Components/Buttons/Selectors/Language_Selector/Language_Selector';
+import Change_Theme from '../../../Components/Buttons/Selectors/Change_Theme/Change_Theme';
 
 const Header_Index = () => {
   return (
@@ -9,6 +10,9 @@ const Header_Index = () => {
         <h1>Control Everything</h1>
       </div>
       <div className='Rigth_Side'>
+        <div className='Button_Field'>
+          <Change_Theme />
+        </div>
         <div className='Button_Field'>
           <Language_Selector />
         </div>
