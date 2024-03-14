@@ -5,8 +5,6 @@ import ptJson from './Translations/pt.json'
 
 const storedLanguage = localStorage.getItem('language');
 
-console.log("Stored Language:", storedLanguage); // Verifique se o valor é 'pt'
-
 i18n.use(initReactI18next).init({
   fallbackLng: storedLanguage || 'pt',
   interpolation: {

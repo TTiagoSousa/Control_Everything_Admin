@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Change_Theme.scss';
-import { ThemeState } from '../../../../Contexts/Theme_Context';
-import * as Icon from '../../../../Imports/icons';
-import * as Color from '../../../../Styles/Colors';
+import { ThemeState } from '../../../Contexts/Theme_Context';
+import * as Icon from '../../../Imports/icons';
+import * as Color from '../../../Styles/Colors';
 
 const Change_Theme = () => {
 

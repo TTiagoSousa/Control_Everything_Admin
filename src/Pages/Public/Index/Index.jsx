@@ -2,6 +2,7 @@ import React from 'react';
 import './Index.scss';
 import Global_Button from '../../../Components/Buttons/Global_Button/Global_Button';
 import { useTranslation } from 'react-i18next';
+
 const Index = () => {
   
   const { t, i18n } = useTranslation();
@@ -13,7 +14,7 @@ const Index = () => {
       <div>
         <Global_Button 
           Text={t("Login")}
-          to="Auth"
+          to="Login"
         />
       </div>
     </div>

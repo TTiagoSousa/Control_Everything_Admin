@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Language_Selector.scss';
-import * as Icon from '../../../../Imports/icons';
-import * as Color from '../../../../Styles/Colors';
+import * as Icon from '../../../Imports/icons';
+import * as Color from '../../../Styles/Colors';
 
 import { useTranslation } from 'react-i18next';
 

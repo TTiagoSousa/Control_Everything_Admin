@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header_Index.scss';
-import Language_Selector from '../../../Components/Buttons/Selectors/Language_Selector/Language_Selector';
-import Change_Theme from '../../../Components/Buttons/Selectors/Change_Theme/Change_Theme';
+import Language_Selector from '../../../Components/Selectors/Language_Selector/Language_Selector';
+import Change_Theme from '../../../Components/Selectors/Change_Theme/Change_Theme';
 
 const Header_Index = () => {
   return (

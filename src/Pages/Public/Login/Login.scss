@@ -1,0 +1,26 @@
+@import '../../../Styles/Colors.scss';
+@import '../../../Styles/Fonts.scss';
+@import '../../../Styles/Formats.scss';
+
+.Login{
+  @include Pages_Configs;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  form{
+    width: 200px;
+    height: 200px;
+  }
+}
+
+// Colors
+  .Dark_Mode .Login form {
+    background-color: $secundery_color_dark;
+  }
+
+  .Light_Mode .Login form {
+    background-color: $secundery_color_light;
+  } 
+// Colors
