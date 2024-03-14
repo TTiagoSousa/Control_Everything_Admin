@@ -1,10 +1,14 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next'
 import enJson from './Translations/en.json'
-import ptJson from './Translations/en.json'
+import ptJson from './Translations/pt.json'
+
+const storedLanguage = localStorage.getItem('language');
+
+console.log("Stored Language:", storedLanguage); // Verifique se o valor é 'pt'
 
 i18n.use(initReactI18next).init({
-  fallbackLng: 'en',
+  fallbackLng: storedLanguage || 'pt',
   interpolation: {
     escapeValue: false
   },
@@ -12,6 +16,4 @@ i18n.use(initReactI18next).init({
     en: enJson,
     pt: ptJson
   }
-})
-
-export default i18n;
+});
