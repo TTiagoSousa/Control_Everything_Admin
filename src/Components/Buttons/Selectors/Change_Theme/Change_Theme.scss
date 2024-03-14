@@ -89,7 +89,7 @@
             transition: all 0.5s;
   
             &:hover{
-              color: $blue_darker;
+              color: $blue_darker !important;
             }
           } 
         }
