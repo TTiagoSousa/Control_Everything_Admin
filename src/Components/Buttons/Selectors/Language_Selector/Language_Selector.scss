@@ -73,11 +73,10 @@
         span{
           font-family: $font_family_poppins;
           font-size: 13px;
-          color: $white;
           transition: all 0.5s;
 
           &:hover{
-            color: $blue_darker;
+            color: $blue_darker !important;
           }
         }
       }
@@ -104,5 +103,13 @@
   .Light_Mode .Language_Selector .Language_Options ul{
     background-color: $tertiary_color_ligth;
     box-shadow: $box_shadow_light;
+  }
+
+  .Dark_Mode .Language_Selector .Language_Options ul li span{
+    color: $white;
+  }
+
+  .Light_Mode .Language_Selector .Language_Options ul li span{
+    color: $gray_dark;
   }
 // Colors
