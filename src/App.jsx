@@ -1,5 +1,5 @@
 import './App.scss';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import * as Public_Page from './Imports/public.pages';
 import Header_Index from './Containers/Headers/Header_Index/Header_Index';
 import Authentication_Check from './Authentication/Authentication_Check';
@@ -7,10 +7,18 @@ import * as Private_Page from './Imports/private.pages';
 
 function App() {
 
+  const location = useLocation();
+
+  const Containers_Location = location.pathname === '/' || location.pathname === '/Login';
+
   return (
     <main>
 
-      <Header_Index />
+      {Containers_Location && (
+        <> 
+          <Header_Index />
+        </>
+      )}
 
       <Routes>
         <Route index element={<Public_Page.Index />} />
