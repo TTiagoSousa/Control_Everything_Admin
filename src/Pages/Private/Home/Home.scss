@@ -1,0 +1,7 @@
+@import '../../../Styles/Formats.scss';
+
+.Home{
+  @include Pages_Configs;
+  height: 95vh;
+}
+

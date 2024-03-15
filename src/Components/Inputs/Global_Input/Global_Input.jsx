@@ -29,9 +29,9 @@ const Global_Input = ({ Type, Placeholder, Value, onChange, max, ref, Text }) =>
           onClick={toggleShowPassword}
         >
           {showPassword ? (
-            <Icon.Close_Eye GlobalColor={Color.blue} />
+            <Icon.Close_Eye GlobalColor={Color.blue_darker} />
           ) : (
-            <Icon.Open_Eye GlobalColor={Color.blue} />
+            <Icon.Open_Eye GlobalColor={Color.blue_darker} />
           )}
         </div>
       )}
