@@ -34,7 +34,7 @@ export const useSignin = () => {
       return;
     }
 
-    if (validateEmail(email)) {
+    if (!validateEmail(email)) {
       setAlert({
         open: true,
         message: "Invalid email format",
