@@ -7,8 +7,6 @@ const Index = () => {
   
   const { t, i18n } = useTranslation();
 
-  console.log("Resources:", i18n.options.resources); // Verifica os recursos de tradução
-
   return (
     <div className='Index'>
       <div>

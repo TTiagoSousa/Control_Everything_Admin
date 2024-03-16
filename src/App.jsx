@@ -4,7 +4,7 @@ import * as Public_Page from './Imports/public.pages';
 import Header_Index from './Containers/Headers/Header_Index/Header_Index';
 import Authentication_Check from './Authentication/Authentication_Check';
 import * as Private_Page from './Imports/private.pages';
-
+import CE_Work_Space from './Pages/Private/CE_Work_Space/CE_Work_Space';
 function App() {
 
   const location = useLocation();
@@ -24,12 +24,12 @@ function App() {
         <Route index element={<Public_Page.Index />} />
         <Route path='Login' element={ <Public_Page.Login/> } />
         <Route 
-        path="CE_Work_Space/*" 
-        element={
-          <Authentication_Check>
-            <Private_Page.Home />
-          </Authentication_Check>            
-        } 
+          path="/CE_Work_Space/*"
+          element={
+            <Authentication_Check>
+              <CE_Work_Space />
+            </Authentication_Check>            
+          } 
         />
       </Routes>
     </main>

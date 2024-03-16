@@ -4,7 +4,6 @@ import App from './App.jsx';
 import { BrowserRouter } from 'react-router-dom';
 import ThemeContext from './Contexts/Theme_Context.jsx';
 import './i18n/index.js';
-import './i18n/index.js'
 import NavsContext from './Contexts/Navs_Context.jsx';
 import DataBaseContext from './Contexts/DataBase_Context.jsx';
 
