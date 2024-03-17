@@ -5,8 +5,11 @@ $border: 1px solid rgba(85, 82, 82, 0.055);
 $border_radius: 10px;
 
 @mixin Pages_Configs{
-  width: calc(100% );
+  width: 100%;
   display: flex;
   flex-direction: column;
   transition: all 0.3s;
+  padding: 0px 10px 0px 10px;
+  gap: 10px;
+  box-sizing: border-box;
 }
