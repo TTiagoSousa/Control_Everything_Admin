@@ -22,8 +22,6 @@ export const useSignin = () => {
   const signin  = async (e) => {
     e.preventDefault();
 
-    console.log("Entrou")
-
     if (!email || !employeeNumber || !password) {
       setAlert({
         open: true,
@@ -62,8 +60,6 @@ export const useSignin = () => {
         Cookies.set('rega434tgr_#23efdf2df', decoded.EmployeeRole);
       }
 
-      console.log("Passou") 
-
       setAuthenticated(true);
 
       setAlert({
@@ -78,7 +74,7 @@ export const useSignin = () => {
       }, 3000);
       
     }catch (error) {
-      console.log(error)
+
       if (error.response && error.response.status === 400) {
         const errorMessage = error.response.data.message;
         console.log(errorMessage)

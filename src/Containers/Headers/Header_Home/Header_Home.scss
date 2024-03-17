@@ -33,11 +33,30 @@
       width: 21px;
       height: 21px;
     }
+
+    .Nav_Button{  
+      display: none;
+
+      button{
+        background: none;
+        border: none;
+        font-family: $font_family_poppins;
+        color: $blue_darker;
+        cursor: pointer;
+      }
+    }
   }
 }
 
 @media (max-width: 800px){
   .Header_Home{
     width: 100%;
+
+    .Rigth_Side{
+
+      .Nav_Button{
+        display: block;
+      }
+    }
   }
-}
+}  

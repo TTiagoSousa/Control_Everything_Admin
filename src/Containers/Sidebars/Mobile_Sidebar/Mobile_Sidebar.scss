@@ -1,0 +1,164 @@
+@import '../../../Styles/Colors.scss';
+@import '../../../Styles/Formats.scss';
+@import '../../../Styles/Fonts.scss';
+
+.Mobile_Sidebar {
+  position: fixed;
+  width: 100%;
+  height: 100vh;      
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  top: 0;
+  left: -100%;
+  transition: 850ms; 
+  z-index: 4;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  z-index: 44;
+  background-color: red;
+
+  &.active{
+    left: 0;
+    transition: 350ms;
+  }
+
+  header{
+    position: relative;
+    width: 100%;
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button{
+      background: none;
+      border: none;
+      font-family: $font_family_poppins;
+      color: $blue_darker;
+      cursor: pointer;
+    }
+  }
+
+  .Sidebar_Body{
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+
+    .Wrap_Menu{
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .Hyper_Link{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+        .Informations_Link{
+          width: 100%;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          .Icon{
+            width: 15px;
+            height: 15px;
+            margin-left: 20px;
+          }
+
+          span {
+            font-size: 18px;
+          }
+        }
+
+        .Icon_Arrow{
+          width: auto;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .Arrow{
+            position: relative;
+            width: 12px;
+            height: 12px;
+            transform: rotate(90deg);
+            animation: fadeIn 0.7s;
+            transition: 0.5s;
+
+            &.active{
+              transform: rotate(60deg);
+            }
+          }
+        }
+      }
+
+      .Div_SubMenu{
+        display: none;
+        font-size: 18px;
+
+        &.active{
+          width: calc(100% - 12.5px);
+          display: flex;
+          float: right;
+          gap: 17px;
+
+          .Line{
+            position: relative;
+            width: auto;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            div{
+              position: relative;
+              width: 1px;
+              height: 95%;
+              margin-left: 20px;
+              background-color: aliceblue;
+            }
+          }
+
+          .Nav_Link_Group{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0%     { opacity: 0;}
+  25%    { opacity: 0;}
+  50%    { opacity: 0.5;}
+  100%   { opacity: 1;}
+}
+
+// Colors
+  .Dark_Mode .Mobile_Sidebar{
+    background-color: $primary_color_dark;
+  }
+
+  .Light_Mode .Mobile_Sidebar{
+    background-color: $primary_color_light;
+  }
+
+  .SideBar_Home .Links_Section .Wrap_Menu .Hyper_Link{
+    color: $gray;
+  }
+// Colors
