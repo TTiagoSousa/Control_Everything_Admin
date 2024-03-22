@@ -5,6 +5,7 @@ import { Route, Routes } from 'react-router-dom';
 import Header_Home from '../../../Containers/Headers/Header_Home/Header_Home';
 import Sidebar_Home from '../../../Containers/Sidebars/Sidebar_Home/Sidebar_Home'
 import Mobile_Sidebar from '../../../Containers/Sidebars/Mobile_Sidebar/Mobile_Sidebar';
+import Private_Routes from '../../../Routes/Private_Routes';
 
 const CE_Work_Space = () => {
 
@@ -33,10 +34,7 @@ const CE_Work_Space = () => {
 
       <div className='CE_Section'>
         <div className='Container'>
-          <Routes>
-            <Route index element={ <Private_Page.Home /> }/>
-            <Route path='Home' element={ <Private_Page.Home /> }/>
-          </Routes>
+          <Private_Routes />
         </div>
       </div>
     </>

@@ -8,6 +8,9 @@ const Private_Routes = () => {
       <Routes>
         <Route index element={ <Private_Page.Home /> }/>
         <Route path='Home' element={ <Private_Page.Home /> }/>
+        <Route path='Apis_Home'>
+          <Route index element={ <Private_Page.Apis_Home /> } />
+        </Route>
       </Routes>
     </>
   )

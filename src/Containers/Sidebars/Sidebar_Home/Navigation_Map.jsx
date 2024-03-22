@@ -8,11 +8,11 @@ export const Navigation_Map = [
     link: '/CE_Work_Space/Home',
   },
 
-  // {
-  //   title: 'Apis',
-  //   icon: <Icon.Api_Icon />,
-  //   link: '/CE_Work_Space/Apis_Dashboard',
-  // },
+  {
+    title: 'Apis',
+    icon: <Icon.Api_Icon />,
+    link: '/CE_Work_Space/Apis_Home',
+  },
 
   // {
   //   title: 'Assets',
