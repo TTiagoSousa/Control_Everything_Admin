@@ -1,5 +1,6 @@
 import axios from "axios";
 import { BASE_URL } from "../config/urls";
+import Cookies from 'js-cookie';
 
 const http = axios.create({
   baseURL: BASE_URL,
@@ -8,7 +9,7 @@ const http = axios.create({
 http.interceptors.request.use(
   config => {
     // Adicione aqui a lógica para manipular a configuração de cada requisição
-    const token = sessionStorage.getItem('token');
+    const token = Cookies.get('erg::#4%&gtreatrbaetrg53df');
 
     if (token) {
       config.headers.Authorization = `Bearer ${token}`;

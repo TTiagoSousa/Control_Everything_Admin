@@ -5,4 +5,74 @@
 .Apis_Home{
   @include Pages_Configs;
   height: 95vh;
+
+  .Cards_Section{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+    .Card{
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: $border;
+      border-radius: $border_radius;
+      font-family: $font_family_poppins;
+      gap: 10px;
+      
+      .wrappe{
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+
+        .Tittle{
+
+          span{
+            font-size: 17px;
+            color: $blue;
+          }
+        }
+
+        .Information{
+          position: relative;
+          width: auto;
+          display: flex;
+          gap: 20px;
+          font-size: 17px;
+
+          a{  
+            text-decoration: none;
+            color: $blue;
+          }
+        }
+      }
+    }
+  }
 }
+
+// Colors
+  .Dark_Mode .Apis_Home .Cards_Section .Card{
+    background-color: $secundery_color_dark;
+  }
+
+  .Dark_Mode .Apis_Home .Cards_Section .Card{
+    box-shadow: $box_shadow_dark;
+  }
+
+  .Light_Mode .Apis_Home .Cards_Section .Card{
+    background-color: $secundery_color_light;
+  }
+
+  .Light_Mode .Apis_Home .Cards_Section .Card{
+    box-shadow: $box_shadow_light;
+  }
+// Colors
