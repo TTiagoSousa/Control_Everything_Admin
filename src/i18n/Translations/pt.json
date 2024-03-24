@@ -3,6 +3,9 @@
     "Login": "Login",
     "Countries API": "API de países",
     "Update Countries api": "Atualizar api de países",
-    "Loading, dont close the page...": "A atualizar, não feche a página..."
+    "Loading, dont close the page...": "A atualizar, não feche a página...",
+    "Dark Mode": "Modo Escuro",
+    "Light Mode": "Modo Claro",
+    "Auto Mode": "Automático"
   }
 }

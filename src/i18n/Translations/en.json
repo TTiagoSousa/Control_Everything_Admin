@@ -3,6 +3,9 @@
     "Login": "Login",
     "Countries API": "Countries API",
     "Update Countries api": "Update Countries api",
-    "Loading, dont close the page...": "Loading, dont close the page..."
+    "Loading, dont close the page...": "Loading, dont close the page...",
+    "Dark Mode": "Dark Mode",
+    "Light Mode": "Light Mode",
+    "Auto Mode": "Auto Mode"
   }
 }
