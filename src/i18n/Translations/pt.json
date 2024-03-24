@@ -6,6 +6,9 @@
     "Loading, dont close the page...": "A atualizar, não feche a página...",
     "Dark Mode": "Modo Escuro",
     "Light Mode": "Modo Claro",
-    "Auto Mode": "Automático"
+    "Auto Mode": "Automático",
+    "Number": "Número",
+    "Email": "Email",
+    "Password": "Password"
   }
 }

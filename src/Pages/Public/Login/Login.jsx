@@ -4,8 +4,11 @@ import GLobal_Input from '../../../Components/Inputs/Global_Input/Global_Input';
 import Global_Button from '../../../Components/Buttons/Global_Button/Global_Button';
 import { useSignin } from '../../../Hooks/Auth/Signin';
 import Mui_Alert from '../../../Components/Alerts/Mui_Alert/Mui_Alerts';
- 
+import { useTranslation } from 'react-i18next';
+
 const Login = () => {
+
+  const { t, i18n } = useTranslation();
 
   const{     
     employeeNumber, setEmployeeNumber,
@@ -22,7 +25,7 @@ const Login = () => {
       <form action="">
         <div className='Field'>
           <GLobal_Input 
-            Text="Number"
+            Text={t("Number")}
             Type="number"
             Value={employeeNumber}
             onChange={(e) => setEmployeeNumber(e.target.value)}
@@ -30,7 +33,7 @@ const Login = () => {
         </div>
         <div className='Field'>
           <GLobal_Input 
-            Text="Email"
+            Text={t("Email")}
             Type="email"
             Value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -38,7 +41,7 @@ const Login = () => {
         </div>
         <div className='Field'>
           <GLobal_Input 
-            Text="Password"
+            Text={t("Password")}
             Type="password"
             Value={password}
             onChange={(e) => setPassword(e.target.value)}
