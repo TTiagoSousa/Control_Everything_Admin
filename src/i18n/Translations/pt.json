@@ -1,6 +1,8 @@
 {
   "translation": {
     "Login": "Login",
-    "Countries API": "API de países"
+    "Countries API": "API de países",
+    "Update Countries api": "Atualizar api de países",
+    "Loading, dont close the page...": "A atualizar, não feche a página..."
   }
 }
