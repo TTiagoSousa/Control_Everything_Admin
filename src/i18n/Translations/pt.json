@@ -11,6 +11,7 @@
     "Email": "Email",
     "Password": "Password",
     "Currencies API": "API de moedas",
-    "Upload currencies": "Faz o upload das moedas"
+    "Upload currencies": "Faz o upload das moedas",
+    "Update currencies rate": "Atualizar a cotação"
   }
 }

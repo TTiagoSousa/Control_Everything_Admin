@@ -4,25 +4,33 @@ import GLobal_Button from '../../../../../Components/Buttons/Global_Button/Globa
 import Mui_Alert from '../../../../../Components/Alerts/Mui_Alert/Mui_Alerts';
 import { useTranslation } from 'react-i18next';
 import fetchUploadCurrencies from '../../../../../Hooks/Currencies/fetchUploadCurrencies';
+import fetchUpdateCurrenciesRate from '../../../../../Hooks/Currencies/fetchUpdateCurrenciesRate';
 
 const Currencies_API = () => {
 
   const { t } = useTranslation();
 
   const { UploadCurrencies, isLoadingUpload } = fetchUploadCurrencies();
+  const { UpdateCurrenciesRate, isLoadingUpdate } = fetchUpdateCurrenciesRate()
 
   console.log()
 
   return (
-    <div className='Countries_Api'>
+    <div className='Currencies_API'>
       <div className='Alert'>
         <Mui_Alert />
       </div>
       <section className='Actions'>
         <div>
           <GLobal_Button 
-            Text={isLoadingUpload ? "Loading, dont close the page..." : t("Upload currencies")}
+            Text={isLoadingUpload ? t("Loading, dont close the page...") : t("Upload currencies")}
             onClick={UploadCurrencies}
+          />
+        </div>
+        <div>
+          <GLobal_Button 
+            Text={isLoadingUpdate ? t("Loading, dont close the page...") : t("Update currencies rate")}
+            onClick={UpdateCurrenciesRate}
           />
         </div>
       </section>
