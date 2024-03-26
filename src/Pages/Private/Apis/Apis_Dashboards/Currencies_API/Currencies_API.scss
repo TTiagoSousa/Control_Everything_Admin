@@ -1,0 +1,48 @@
+@import '../../../../../Styles/Formats.scss';
+@import '../../../../../Styles/Colors.scss';
+@import '../../../../../Styles/Fonts.scss';
+
+.Currencies_API{
+  @include Pages_Configs;
+  height: 95vh;
+
+  .Alert{
+    position: fixed;
+    right: 0%;
+    bottom: 0%;
+    transform: translate(-50%, -50%);
+    z-index: 550;
+  }
+
+  .Actions{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: $border_radius;
+    border: $border;
+
+    div{
+      width: 100%;
+      height: 30px;
+    }
+  }
+}
+
+// Colors
+  .Dark_Mode .Currencies_API .Actions {
+    background-color: $secundery_color_dark;
+  }
+
+  .Dark_Mode .Currencies_API .Actions {
+    box-shadow: $box_shadow_dark;
+  }
+
+  .Light_Mode .Currencies_API .Actions {
+    background-color: $secundery_color_light;
+  }
+
+  .Light_Mode .Currencies_API .Actions {
+    box-shadow: $box_shadow_light;
+  }
+// Colors

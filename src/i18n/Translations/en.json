@@ -9,6 +9,8 @@
     "Auto Mode": "Auto Mode",
     "Number": "Number",
     "Email": "Email",
-    "Password": "Password"
+    "Password": "Password",
+    "Currencies API": "Currencies API",
+    "Upload currencies": "Upload currencies"
   }
 }

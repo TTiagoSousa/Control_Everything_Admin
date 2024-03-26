@@ -9,6 +9,8 @@
     "Auto Mode": "Automático",
     "Number": "Número",
     "Email": "Email",
-    "Password": "Password"
+    "Password": "Password",
+    "Currencies API": "API de moedas",
+    "Upload currencies": "Faz o upload das moedas"
   }
 }
